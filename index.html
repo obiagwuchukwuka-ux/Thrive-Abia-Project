@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherguard Paint Limited | Premium Interior & Exterior Decor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a; /* Deep Navy */
+            --accent: #d4af37;  /* Gold */
+            --light: #f8fafc;
+            --text: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span { color: var(--accent); }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
+                        url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; }
+
+        .cta-button {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover { background: white; transform: translateY(-3px); }
+
+        /* Products Section */
+        .section { padding: 80px 10%; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; color: var(--primary); }
+        .section-title div { height: 4px; width: 60px; background: var(--accent); margin: 10px auto; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .card-content { padding: 25px; }
+        .card-content h3 { margin-bottom: 10px; color: var(--primary); }
+
+        /* Contact/Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 250px;
+        }
+
+        .contact-item h4 { color: var(--accent); margin-bottom: 5px; }
+        .contact-item a { color: white; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Weatherguard <span>Paint</span></div>
+    </nav>
+
+    <section class="hero">
+        <h1>Transform Your Space</h1>
+        <p>Premium production and expert application for interiors that breathe life into your home.</p>
+        <a href="mailto:ficresources@gmail.com" class="cta-button">Get a Free Quote</a>
+    </section>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>Our Signature Finishes</h2>
+            <div></div>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&q=80&w=800" alt="Satin Paint Finish">
+                <div class="card-content">
+                    <h3>Satin Luxury</h3>
+                    <p>A silky, pearl-like finish that is durable and easy to clean. Perfect for high-traffic hallways and kitchens.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1615876234586-44491c3683a9?auto=format&fit=crop&q=80&w=800" alt="Emulsion Paint Finish">
+                <div class="card-content">
+                    <h3>Premium Emulsion</h3>
+                    <p>Water-based excellence for your walls and ceilings. Provides deep, rich color coverage with a smooth touch.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800" alt="Matt Paint Finish">
+                <div class="card-content">
+                    <h3>Elegant Matt</h3>
+                    <p>Non-reflective and sophisticated. Ideal for hiding wall imperfections and creating a cozy, modern atmosphere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #edf2f7;">
+        <div class="section-title">
+            <h2>Interior & Exterior Decoration</h2>
+            <div></div>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" alt="Home Decor">
+                <div class="card-content">
+                    <h3>Interior Styling</h3>
+                    <p>From color consultation to full application, we curate spaces that reflect your personality.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Exterior Paint">
+                <div class="card-content">
+                    <h3>Weatherproof Exterior</h3>
+                    <p>Protecting your building from the elements with our specialized weather-resistant production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Connect With Weatherguard Paint</h2>
+        <p>Ready to start your renovation journey? Reach out to our experts today.</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <h4>Call Us</h4>
+                <p>08033461821</p>
+            </div>
+            <div class="contact-item">
+                <h4>WhatsApp</h4>
+                <p>08074883518</p>
+            </div>
+            <div class="contact-item">
+                <h4>Email</h4>
+                <p><a href="mailto:ficresources@gmail.com">ficresources@gmail.com</a></p>
+            </div>
+        </div>
+        <p style="margin-top: 50px; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Weatherguard Paint Resources. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+</body>
+</html>
